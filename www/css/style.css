@@ -288,7 +288,7 @@ border:1px solid #e7eaed;
     -ms-transition: 0.5s all;
 	text-align: center;
 }
-.focus-layout:hover {
+.focus-layout-active {
     background-color: #01a185;
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -304,7 +304,7 @@ border:1px solid #e7eaed;
 	height: 35px;
 	margin-top: 20px;
 }
-.focus-layout:hover h4.clrchg {
+.focus-layout-active h4.clrchg {
     color: #fff;
 }
 .focus-grids {
@@ -332,7 +332,7 @@ border:1px solid #e7eaed;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-.focus-layout:hover div.focus-image i{
+.focus-layout-active div.focus-image i{
 	background:#FBFBFB;
 	color:#000;
     transition:0.5s all;
