@@ -288,7 +288,7 @@ border:1px solid #e7eaed;
     -ms-transition: 0.5s all;
 	text-align: center;
 }
-.focus-layout:hover {
+.focus-layout-active {
     background-color: #01a185;
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -304,7 +304,7 @@ border:1px solid #e7eaed;
 	height: 35px;
 	margin-top: 20px;
 }
-.focus-layout:hover h4.clrchg {
+.focus-layout-active h4.clrchg {
     color: #fff;
 }
 .focus-grids {
@@ -332,7 +332,7 @@ border:1px solid #e7eaed;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-.focus-layout:hover div.focus-image i{
+.focus-layout-active div.focus-image i{
 	background:#FBFBFB;
 	color:#000;
     transition:0.5s all;
@@ -437,6 +437,19 @@ i.real-estate {
 .sign-in-wrapper{
 	background:#f9f9f9;
 }
+.hidden {
+	display: none;
+}
+.incorrect-password {
+	text-align: center;
+	color: #D50D0D;
+	margin: 0 0 30px;
+}
+.incorrect-password span {
+	padding: 15px 10px;
+	background-color: #F6EDED;
+	border-radius: 10px;
+}
 .new_people{
 	padding:3em 0 0;
 	text-align:center;
@@ -444,7 +457,7 @@ i.real-estate {
 .new_people h2{
 	font-size:2em;
 	color:#f3c500;
-	margin:0;
+	margin-bottom: 20px;
 }
 .new_people p{
 	color:#999;
@@ -454,10 +467,10 @@ i.real-estate {
 }
 .new_people a{
 	padding: 12px 30px;
-    border: 1px solid #01a185;
-    color: #01a185;
-    text-decoration: none;
-    font-size: 16px;
+  border: 1px solid #01a185;
+  color: #01a185;
+  text-decoration: none;
+  font-size: 16px;
 }
 .new_people a:hover{
 	color:#FFF;
@@ -1151,7 +1164,7 @@ ul.location li:nth-child(2) {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 44%;
+    width: 36%;
     height: 1px;
     background: #545556;
 }
@@ -1160,7 +1173,7 @@ ul.location li:nth-child(2) {
     position: absolute;
     top: 50%;
     right: 0;
-    width: 44%;
+    width: 36%;
     height: 1px;
     background: #545556;
 }
@@ -4916,5 +4929,3 @@ label {
 .switch-wrapper {
   padding-top: 20px;
 }
-
-

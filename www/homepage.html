@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appliance Control System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- //for-mobile-apps -->
+    <!--fonts-->
+<!--
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+-->
+    <!--//fonts-->
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- js -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <link href="css/jquery.uls.css" rel="stylesheet"/>
+    <link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+    <link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+    <script src="js/indexScript.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><span>Appliance</span>Control</a>
+        </div>
+        <div class="header-right">
+          <a class="account" href="#">Home</a>
+          <a href="#contact"><span class="active uls-trigger">Contact</span></a>
+          <span class="active uls-trigger">About Us</span>
+        </div>
+      </div>
+    </div>
+    <div class="main-banner banner text-center">
+      <div class="container">
+        <h1>Control any   <span class="segment-heading"> electric appliance </span> in your home</h1>
+        <p>It will make your life super easy!  </p>
+        <a href="#switch-container">Get Started</a>
+      </div>
+    </div>
+    <!-- content-starts-here -->
+    <div class="content">
+      <div class="categories">
+        <div class="container" id="switch-container">
+          <form name="applianceForm" method="post" action="/setstatus">
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-mobile"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="light">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Lights</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-laptop"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="fan">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Fan</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-car"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="tv">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Television</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-motorcycle"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="footlight">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Footlights</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-wheelchair"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="nightLamp">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Night lamps</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-paw"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="ac">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Air conditioner</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-book"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="airPurifier">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Air purifier</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-asterisk"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="waterPurifier">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Water Purifier</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-gamepad"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="geyser">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Geyser</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-shield"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="chimney">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Chimney</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-at"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="fridge">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Refrigerator</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 focus-grid">
+              <div class="focus-border">
+                <div class="focus-layout">
+                  <div class="focus-image"><i class="fa fa-home"></i><div class="switch-wrapper"><span class="toggle">
+                    <input type="checkbox" name="washingMachine">
+                    <label data-off="OFF" data-on="ON"></label>
+                    </span></div></div>
+                  <h4 class="clrchg">Washing Machine</h4>
+                </div>
+              </div>
+            </div>
+            <input type="submit" hidden="hidden" name="submit" id="submit">
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+      <div class="mobile-app">
+        <div class="container">
+          <div class="col-md-5 app-left">
+            <a href="mobileapp.html"><img src="images/app.png" alt=""></a>
+          </div>
+          <div class="col-md-7 app-right">
+            <h3>Appliance Control App is the <span>Scalable</span> app for controlling all of your appliances</h3>
+            <p>You can either manually control your appliance or set the app to control it automatically. It will learn from your control history.</p>
+            <div class="app-buttons">
+              <div class="app-button">
+                <a href="#"><img src="images/1.png" alt=""></a>
+              </div>
+              <div class="app-button">
+                <a href="#"><img src="images/2.png" alt=""></a>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!--footer section start-->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="foo-grids">
+            <div class="col-md-3 footer-grid">
+              <h4 class="footer-head">Who We Are</h4>
+              <p>We are a group of creative professionals focused on combining great design ideas with the best user experience development. We love design and we love coding, allowing us to integrate both disciplines into our creative process. This ability enables us to pursue unique and beautiful results that will have a positive impact on your brand, project and website.</p>
+            </div>
+            <div class="col-md-3 footer-grid">
+              <h4 class="footer-head">Help</h4>
+              <ul>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shortcodes</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+              <h4 class="footer-head">Information</h4>
+              <ul>
+                <li><a href="#">Locations Map</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Popular searches</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer-grid" id="contact">
+              <h4 class="footer-head">Contact Us</h4>
+              <span class="hq">Ardumed</span>
+              <address>
+                <ul class="location">
+                  <li><span class="glyphicon glyphicon-map-marker"></span></li>
+                  <li>Swarna Silicone Castle, Whitefield, Bangalore</li>
+                  <div class="clearfix"></div>
+                </ul>
+                <ul class="location">
+                  <li><span class="glyphicon glyphicon-earphone"></span></li>
+                  <li>+91 8124400880</li>
+                  <div class="clearfix"></div>
+                </ul>
+                <ul class="location">
+                  <li><span class="glyphicon glyphicon-envelope"></span></li>
+                  <li><a href="mailto:himanshusingh2407@gmail.com">himanshusingh2407@gmail.com</a></li>
+                  <div class="clearfix"></div>
+                </ul>
+              </address>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <div class="container">
+          <div class="footer-logo">
+            <a href="#"><span>Appliance</span>Control</a>
+          </div>
+          <div class="footer-social-icons">
+            <ul>
+              <li><a class="facebook" href="#"><span>Facebook</span></a></li>
+              <li><a class="twitter" href="#"><span>Twitter</span></a></li>
+              <li><a class="flickr" href="#"><span>Flickr</span></a></li>
+              <li><a class="googleplus" href="#"><span>Google+</span></a></li>
+              <li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+            </ul>
+          </div>
+          <div class="copyrights">
+            <p> © 2016 Appliance Control. All Rights Reserved</p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </footer>
+    <!--footer section end-->
+  </body>
+</html>

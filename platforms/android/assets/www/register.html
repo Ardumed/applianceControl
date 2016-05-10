@@ -8,6 +8,10 @@
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
     <!-- js -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- js -->
@@ -33,23 +37,9 @@
         <div class="graphs">
           <div class="sign-in-form">
             <div class="sign-in-form-top">
-              <h1>Log in</h1>
+              <h1>Register</h1>
             </div>
             <div class="signin">
-              <div class="incorrect-password hidden">
-                <span>
-                  Invalid Username or Password
-                </span>
-              </div>
-              <!-- <div class="signin-rit">
-                <span class="checkbox1">
-                  <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Forgot Password ?</label>
-                </span>
-                <p>
-                  <a href="#">Click Here</a>
-                </p>
-                <div class="clearfix"></div>
-              </div> -->
               <div class="log-input">
                 <div class="log-input-left">
                   <input id="username" type="text" class="user" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}"/>
@@ -62,12 +52,12 @@
                 </div>
                 <div class="clearfix"></div>
               </div>
-              <input type="submit" value="Log in" onclick="authenticate()">
+              <input type="submit" value="Register">
             </div>
-            <!-- <div class="new_people">
-              <h2>New Users</h2>
-              <a href="register.html">Register Now!</a>
-            </div> -->
+            <div class="new_people">
+              <h2>Already a User</h2>
+              <a href="login.html">Sign In!</a>
+            </div>
           </div>
         </div>
       </div>
