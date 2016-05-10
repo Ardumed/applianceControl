@@ -341,8 +341,11 @@ border:1px solid #e7eaed;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-.focus-image i.fa-laptop {
+.focus-image i.fa-desktop {
 	background:#ff9e29;
+}
+.focus-image i.fa-music {
+    background: #7e3b07;
 }
 .focus-image i.fa-car {
 	background:#3fb7d2;
@@ -4092,7 +4095,7 @@ label {
 		padding: 10px 0 30px 0;
 	}
 	.logo a {
-		font-size: 45px;
+		font-size: 30px;
 	}
 	.logo {
 		float: none;
@@ -4928,4 +4931,7 @@ label {
 
 .switch-wrapper {
   padding-top: 20px;
+}
+.disableDiv {
+  opacity: 0.3;
 }
